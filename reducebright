@@ -1,6 +1,0 @@
-#\!/bin/sh 
-bright=$(<"/sys/class/backlight/intel_backlight/brightness") 
-if (($bright >= 1100)) 
-then 
-    expr $bright - 1000 > /sys/class/backlight/intel_backlight/brightness 
-fi
