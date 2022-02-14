@@ -16,7 +16,15 @@ sudo chmod 777 /usr/share/images/desktop-base/desktop-grub.png
 
 #Set launch Background /usr/share/plymouth/themes/parrot/backgound.png
 
+sudo mv  /usr/share/plymouth/themes/parrot/background.png /usr/share/plymouth/themes/parrot/previous-background.png
+
+sudo mv ./images/launch_background.png /usr/share/plymouth/themes/parrot/background.png
+
+sudo chown root:root /usr/share/plymouth/themes/parrot/background.png 
+
 #Set login Background /etc/lightdm/wallpaper.jpg
+
+sudo mv ./images/login_background.jpg /etc/lightdm/wallpaper.jpg
 
 #Move image to backgrounds
 sudo mv ./images/wallpaper.jpg /usr/share/backgrounds/
