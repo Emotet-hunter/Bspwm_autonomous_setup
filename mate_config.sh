@@ -6,7 +6,9 @@ sudo mv /usr/share/images/desktop-base/desktop-grub.png /usr/share/images/deskto
 
 sudo mv ./images/grub_background.jpg /usr/share/images/desktop-base/desktop-grub.png
 
-#Set launch Background
+sudo chown root:root /usr/share/images/desktop-base/desktop-grub.png
+
+sudo chmod 777 /usr/share/images/desktop-base/desktop-grub.png
 
 #Set login Background
 
