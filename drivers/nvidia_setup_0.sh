@@ -10,7 +10,7 @@ wget https://es.download.nvidia.com/XFree86/Linux-x86_64/510.47.03/NVIDIA-Linux-
 
 systemctl set-default multi-user.target
 
-echo -e "nouveau blacklist\noptions nouveau modeset=0\nalias nouveau off" > /etc/modprobe.d/blacklist-nouveau.conf
+sudo echo -e "nouveau blacklist\noptions nouveau modeset=0\nalias nouveau off" > /etc/modprobe.d/blacklist-nouveau.conf
 
 update-initramfs -u 
 
