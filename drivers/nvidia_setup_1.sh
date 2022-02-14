@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/Downloads
+
 chmod +x NVIDIA*.run
 
 ./NVIDIA*.run

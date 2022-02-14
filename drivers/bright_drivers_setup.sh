@@ -37,24 +37,4 @@ chmod u+x /usr/local/bin/brightome
 
 #Now you can type ./reducebright or ./increasebright to edit bright level
 
-#Assign to key combination
-
-apt install xbindkeys xbindkeys-config -y
-
-rm /home/<LOCALUSER>/.xbindkeysrc
-
-cp -r .xbindkeysrc /home/<LOCALUSER>/
-
-chown <LOCALUSER> /home/<LOCALUSER>/.xbindkeysrc
-
-chgrp <LOCALUSER> /home/<LOCALUSER>/.xbindkeysrc
-
-su <LOCALUSER>
-
-xbindkeys --defaults > /home/<LOCALUSER>/.xbindkeysrc
-
-killall -s1 xbindkeys
-
-xbindkeys -f /home/<LOCALUSER>/.xbindkeysrc
-
-#Now Ctr+"+" to increase bright and Crt+"-" to reduce bright
+#Assignation in sxhkdrc to Ctrl + '+' and Ctrl + '-'
