@@ -23,12 +23,19 @@ parrot-upgrade
 ######### INSTALL LIBRARIES ############
 ########################################
 
+
 apt install build-essential git vim vim-gtk xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
 
 
-#Clone bspwm repository
-
 cd /home/<LOCALUSER>/Downloads
+
+#Install github-desktop
+
+sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
+
+sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
+
+#Clone bspwm repository
 
 git clone https://github.com/baskerville/bspwm.git
 
