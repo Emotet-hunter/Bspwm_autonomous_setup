@@ -4,6 +4,8 @@
 
 cd ~/Downloads/
 
+sudo apt install nvidia-smi -y
+
 wget https://es.download.nvidia.com/XFree86/Linux-x86_64/510.47.03/NVIDIA-Linux-x86_64-510.47.03.run
 
 #drop to Runlevel3
