@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Remove README file
+
+sudo rm ~/Desktop/README*
+
 #Set Grub Background
 
 sudo mv /usr/share/images/desktop-base/desktop-grub.png /usr/share/images/desktop-base/previous-desktop-grub.png
@@ -122,4 +126,3 @@ gsettings set org.mate.power-manager action-critical-battery "suspend"
 
 # Disable keyboard sounds
 #gsettings set org.mate.sound input-feedback-sounds false
-
