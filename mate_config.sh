@@ -10,7 +10,9 @@ sudo chown root:root /usr/share/images/desktop-base/desktop-grub.png
 
 sudo chmod 777 /usr/share/images/desktop-base/desktop-grub.png
 
-#Set login Background
+#Set launch Background /usr/share/plymouth/themes/parrot/backgound.png
+
+#Set login Background /etc/lightdm/wallpaper.jpg
 
 #Move image to backgrounds
 sudo mv ./images/wallpaper.jpg /usr/share/backgrounds/
