@@ -11,7 +11,7 @@ sudo mv ./images/grub_background.jpg /usr/share/images/desktop-base/desktop-grub
 #Set login Background
 
 #Move image to backgrounds
-sudo mv wallpaper.jpg /usr/share/backgrounds/
+sudo mv ./images/wallpaper.jpg /usr/share/backgrounds/
 
 #Set the new wallpaper
 gsettings set org.mate.background picture-filename /usr/share/backgrounds/wallpaper.jpg
