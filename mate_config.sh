@@ -1,5 +1,15 @@
 #!/bin/bash
 
+#Set Grub Background
+
+sudo mv /usr/share/images/desktop-base/desktop-grub.png /usr/share/images/desktop-base/previous-desktop-grub.png
+
+sudo mv ./images/grub_background.jpg /usr/share/images/desktop-base/desktop-grub.png
+
+#Set launch Background
+
+#Set login Background
+
 #Move image to backgrounds
 sudo mv wallpaper.jpg /usr/share/backgrounds/
 
