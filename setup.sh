@@ -91,21 +91,21 @@ chmod +x /home/<LOCALUSER>/.config/bspwm/bspwmrc
 
 #Resize file
 
-mkdir /home/<LOCALUSER>/.config/sxhkd/scripts
+mkdir /home/<LOCALUSER>/.config/bspwm/scripts
 
-chown <LOCALUSER> /home/<LOCALUSER>/.config/sxhkd/scripts
+chown <LOCALUSER> /home/<LOCALUSER>/.config/bspwm/scripts
 
-chgrp <LOCALUSER> /home/<LOCALUSER>/.config/sxhkd/scripts
+chgrp <LOCALUSER> /home/<LOCALUSER>/.config/bspwm/scripts
 
-touch /home/<LOCALUSER>/.config/sxhkd/scripts/bspwm_resize
+touch /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
 
-echo -e "#!/usr/bin/env dash\n\nif bspc query -N -n focused.floating > /dev/null; then\n    step=20\nelse\n    step=100\nfi\n\ncase \"\$1\" in\n    west) dir=right; falldir=left; x=\"-\$step\"; y=0;;\n    east) dir=right; falldir=left; x=\"\$step\"; y=0;;\n    north) dir=top; falldir=bottom; x=0; y=\"-\$step\";;\n    south) dir=top; falldir=bottom; x=0; y=\"\$step\";;\nesac\n\nbspc node -z \"\$dir\" \"\$x\" \"\$y\" || bspc node -z \"\$falldir\" \"\$x\" \"\$y\"" > /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
+echo -e '#!'"/usr/bin/env dash\n\nif bspc query -N -n focused.floating > /dev/null; then\n    step=20\nelse\n    step=100\nfi\n\ncase \"\$1\" in\n    west) dir=right; falldir=left; x=\"-\$step\"; y=0;;\n    east) dir=right; falldir=left; x=\"\$step\"; y=0;;\n    north) dir=top; falldir=bottom; x=0; y=\"-\$step\";;\n    south) dir=top; falldir=bottom; x=0; y=\"\$step\";;\nesac\n\nbspc node -z \"\$dir\" \"\$x\" \"\$y\" || bspc node -z \"\$falldir\" \"\$x\" \"\$y\"" > /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
 
-chown <LOCALUSER> /home/<LOCALUSER>/.config/sxhkd/scripts/bspwm_resize
+chown <LOCALUSER> /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
 
-chgrp <LOCALUSER> /home/<LOCALUSER>/.config/sxhkd/scripts/bspwm_resize
+chgrp <LOCALUSER> /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
 
-chmod +x /home/<LOCALUSER>/.config/sxhkd/scripts/bspwm_resize
+chmod +x /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
 
 
 
