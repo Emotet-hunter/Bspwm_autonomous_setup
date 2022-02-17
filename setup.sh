@@ -5,6 +5,7 @@
 ########################################
 
 #Configure Terminal Default profile (Hack Nerd Font included)
+#Change Pluma theme to Cobalt
 #Install Foxy Proxy Addon
 #Install Wappalizer Addon
 
