@@ -17,11 +17,11 @@ parrot-upgrade
 
 chown <LOCALUSER> /sys/class/backlight/intel_backlight/brightness
 
-echo -e "#\!/bin/sh \nbright=\$(<\"/sys/class/backlight/intel_backlight/brightness\") \nif ((\$bright >= 1100)) \nthen \n    expr \$bright - 1000 > /sys/class/backlight/intel_backlight/brightness \nfi" > /usr/local/bin/reducebright
+echo -e '#!'"/bin/sh \nbright=\$(<\"/sys/class/backlight/intel_backlight/brightness\") \nif ((\$bright >= 1100)) \nthen \n    expr \$bright - 1000 > /sys/class/backlight/intel_backlight/brightness \nfi" > /usr/local/bin/reducebright
 
-echo -e "#\!/bin/sh \nbright=\$(<\"/sys/class/backlight/intel_backlight/brightness\") \nif ((\$bright <= 25666)) \nthen \n    expr \$bright + 1000 > /sys/class/backlight/intel_backlight/brightness \nfi" > /usr/local/bin/increasebright
+echo -e '#!'"/bin/sh \nbright=\$(<\"/sys/class/backlight/intel_backlight/brightness\") \nif ((\$bright <= 25666)) \nthen \n    expr \$bright + 1000 > /sys/class/backlight/intel_backlight/brightness \nfi" > /usr/local/bin/increasebright
 
-echo -e "#\!/bin/sh \nchown <LOCALUSER> /sys/class/backlight/intel_backlight/brightness" > /usr/local/bin/brightome
+echo -e '#!'"/bin/sh \nchown <LOCALUSER> /sys/class/backlight/intel_backlight/brightness" > /usr/local/bin/brightome
 
 chown <LOCALUSER> /usr/local/bin/increasebright
 
