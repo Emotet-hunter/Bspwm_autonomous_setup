@@ -8,7 +8,7 @@ sudo rm ~/Desktop/README*
 
 sudo mv /usr/share/images/desktop-base/desktop-grub.png /usr/share/images/desktop-base/previous-desktop-grub.png
 
-sudo mv ./images/grub_background.jpg /usr/share/images/desktop-base/desktop-grub.png
+sudo mv ./images/grub_background.png /usr/share/images/desktop-base/desktop-grub.png
 
 sudo chown root:root /usr/share/images/desktop-base/desktop-grub.png
 
