@@ -194,7 +194,7 @@ rm Hack.zip
 
 sudo apt install feh -y
 
-mv $repo/wallpaper.jpg /usr/share/backgrounds/
+mv $repo/images/wallpaper.jpg /usr/share/backgrounds/
 
 echo 'feh --bg-fill /usr/share/backgrounds/wallpaper.jpg' >> /home/<LOCALUSER>/.config/bspwm/bspwmrc
 
