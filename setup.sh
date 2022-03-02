@@ -6,6 +6,7 @@
 
 #Configure Terminal Default profile (Hack Nerd Font included)
 #Change Pluma theme to Cobalt
+#Change Nord Rofi theme executing 'rofi-theme-selector' and selecting Nord theme
 #Install last Firefox version and locate un /opt/
 #Install Foxy Proxy Addon
 #Install Wappalizer Addon
