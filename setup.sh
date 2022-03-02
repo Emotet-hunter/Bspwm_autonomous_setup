@@ -244,7 +244,7 @@ cp $repo/polybar/modules/ethernet_status.sh /home/<LOCALUSER>/.config/bin/
 
 #Hack the Box polybar module
 
-cp $repo/hackthebox_status.sh /home/<LOCALUSER>/.config/bin/
+cp $repo/polybar/modules/hackthebox_status.sh /home/<LOCALUSER>/.config/bin/
 
 #include module in polybar
 
