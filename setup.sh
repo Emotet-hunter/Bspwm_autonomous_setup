@@ -238,7 +238,7 @@ mkdir /home/<LOCALUSER>/.config/bin
 
 chown <LOCALUSER>:<LOCALUSER> /home/<LOCALUSER>/.config/bin
 
-cp $repo/ethernet_status.sh /home/<LOCALUSER>/.config/bin/
+cp $repo/polybar/modules/ethernet_status.sh /home/<LOCALUSER>/.config/bin/
 
 #include module in polybar
 
