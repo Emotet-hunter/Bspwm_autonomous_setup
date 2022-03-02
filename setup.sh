@@ -34,7 +34,7 @@ cd /home/<LOCALUSER>/Downloads
 
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
 
-sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
+sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb -y
 
 #Clone bspwm repository
 
@@ -114,15 +114,15 @@ chmod +x /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize
 
 cp $repo/sxhkd/sxhkdrc /home/<LOCALUSER>/.config/sxhkd/
 
-#Add previous script path to sxhkdrc
-
-echo "    /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize {west,south,north,east}" >> /home/<LOCALUSER>/.config/sxhkd/sxhkdrc
-
 chown <LOCALUSER> /home/<LOCALUSER>/.config/sxhkd/sxhkdrc
 
 chgrp <LOCALUSER> /home/<LOCALUSER>/.config/sxhkd/sxhkdrc
 
 chmod +x /home/<LOCALUSER>/.config/sxhkd/sxhkdrc
+
+#Add previous script path to sxhkdrc
+
+echo "    /home/<LOCALUSER>/.config/bspwm/scripts/bspwm_resize {west,south,north,east}" >> /home/<LOCALUSER>/.config/sxhkd/sxhkdrc
 
 
 #Polybar isntall
@@ -166,8 +166,6 @@ sudo ninja -C build install
 #Rofi install
 
 sudo apt install rofi -y
-
-kill -9 -1
 
 #Install firefox
 
