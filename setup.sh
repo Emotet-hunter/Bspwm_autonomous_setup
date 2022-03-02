@@ -6,6 +6,7 @@
 
 #Configure Terminal Default profile (Hack Nerd Font included)
 #Change Pluma theme to Cobalt
+#Install last Firefox version and locate un /opt/
 #Install Foxy Proxy Addon
 #Install Wappalizer Addon
 
@@ -172,13 +173,6 @@ sudo apt install rofi -y
 chown <LOCALUSER>:<LOCALUSER> /opt/
 
 cd /opt
-
-#Download firefox installer
-wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1WSczvDnpNia8HiZg4sPdqaGYmfHKPAP3' -O firefox-97.0.tar.bz2
-
-tar -xf firefox-97.0.tar.bz2
-
-rm firefox-97.0.tar.bz2
 
 #Firejail
 
