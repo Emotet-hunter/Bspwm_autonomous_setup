@@ -24,11 +24,11 @@ sudo chown root:root /usr/share/plymouth/themes/parrot/background.png
 
 #Set login Background /etc/lightdm/wallpaper.jpg
 
-sudo mv /usr/share/backgrounds/log.jpg /usr/share/backgrounds/previous-log.jpg 
+sudo mv /usr/share/backgrounds/login.jpg /usr/share/backgrounds/previous-login.jpg 
 
-sudo mv ./images/login_background.jpg /usr/share/backgrounds/log.jpg 
+sudo mv ./images/login_background.jpg /usr/share/backgrounds/login.jpg 
 
-sudo chown root:root /usr/share/backgrounds/log.jpg 
+sudo chown root:root /usr/share/backgrounds/login.jpg 
 
 #Move image to backgrounds
 sudo mv ./images/wallpaper.jpg /usr/share/backgrounds/
